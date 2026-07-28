@@ -4,9 +4,11 @@
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-green.svg)](https://fastapi.tiangolo.com/)
-[![Tests](https://img.shields.io/badge/tests-237%20passed-brightgreen.svg)]()
+[![Tests](https://img.shields.io/badge/tests-237%20passing-brightgreen.svg)](https://github.com/ScipionT2/google-code-review-ai/actions)
+[![CI](https://github.com/ScipionT2/google-code-review-ai/actions/workflows/tests.yml/badge.svg)](https://github.com/ScipionT2/google-code-review-ai/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![CI](https://github.com/escipionpedroza147-commits/google-code-review-ai/actions/workflows/tests.yml/badge.svg)](https://github.com/escipionpedroza147-commits/google-code-review-ai/actions)
+
+**Every PR reviewed like a Staff Engineer saw it — automatically.** Google Code Review AI is a self-hosted review engine that combines free static analysis with deep AI-powered review to catch security flaws, logic bugs, and architecture issues before they hit production.
 
 ## The Problem
 
@@ -14,7 +16,7 @@ Code reviews are inconsistent. Junior devs miss security flaws. Senior devs don'
 
 ## The Solution
 
-**Google Code Review AI** combines free static analysis with deep AI-powered review to catch what humans and linters miss — before it hits production.
+**Google Code Review AI** combines free static analysis with deep AI-powered review to catch what humans and linters miss — before it hits production. Hook it into your GitHub PRs, CI pipeline, or call it directly as an API. Static checks cost nothing; AI review runs on your own Gemini or OpenAI key.
 
 ### What It Does
 
@@ -31,14 +33,16 @@ Code reviews are inconsistent. Junior devs miss security flaws. Senior devs don'
 ## Quick Start
 
 ```bash
-git clone https://github.com/escipionpedroza147-commits/google-code-review-ai.git
+git clone https://github.com/ScipionT2/google-code-review-ai.git
 cd google-code-review-ai
 pip install -r requirements.txt
-cp .env.example .env
+cp .env.example .env   # add GEMINI_API_KEY or OPENAI_API_KEY for AI review
 python main.py
 ```
 
 Server at `http://localhost:8000` — Interactive docs at `/docs`.
+
+Static analysis works out of the box with **no API key**. Add a Gemini or OpenAI key to unlock full AI review.
 
 ### Docker
 
@@ -183,7 +187,7 @@ All 237 tests run offline — no API keys required for static analysis.
 
 MIT — see [LICENSE](LICENSE).
 
-## Contact
+---
 
-**Escipion Pedroza**
-GitHub: [@escipionpedroza147-commits](https://github.com/escipionpedroza147-commits)
+**Built by [VCorv](https://vcorv.com)** — a technology company building tools for the AI era.
+
